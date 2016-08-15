@@ -4,17 +4,19 @@ var flamenco = function() {
 		document.getElementsByTagName('body')[0].style.background = "url('http://wallpaper.zone/img/3455902.jpg') no-repeat fixed";
 		// video in first div
 		var flamencoIframe = '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/QLnEjHuMFsA?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>';
+		var flamencoIframe2 = '<iframe width="560" height="315" src="https://www.youtube.com/embed/HuWei6VwnPE?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>';
+		var chosenValue = Math.random() < 0.5 ? flamencoIframe : flamencoIframe2;
 		var intro = document.getElementById('intro');
 		if (intro) {
-			intro.innerHTML = flamencoIframe;
+			intro.innerHTML = chosenValue;
 			return;
 		} 
 		var containers = document.getElementsByClassName('container');
 		if (containers && containers.length) {
-			containers[0].innerHTML = flamencoIframe;
+			containers[0].innerHTML = chosenValue;
 		} else {
 			var div = document.getElementsByTagName('div')[1];
-			div.innerHTML = flamencoIframe;
+			div.innerHTML = chosenValue;
 		}
 	};
 
