@@ -64,6 +64,7 @@ var flamenco = function() {
 	window.addEventListener('click', clickPalmas, false);
 }
 
+
 // init on load
 if(window.attachEvent) {
 	window.attachEvent('onload', flamenco);
