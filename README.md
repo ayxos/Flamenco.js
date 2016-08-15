@@ -15,7 +15,7 @@ Setup:
 Include "flamenco.js" in your page. 
 
 ```
-<script type="text/javascript" src="flamenco.js"></script></script>
+<script type="text/javascript" src="flamenco.js"></script>
 ```
 
 Inspired by [FartScroll](https://github.com/theonion/fartscroll.js/blob/master/fartscroll.js)
